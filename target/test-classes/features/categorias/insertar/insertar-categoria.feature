@@ -1,5 +1,8 @@
+@MatenimientoProducto
 Feature: Registrar Categoría
-
+	
+	
+		@HP
 		Scenario: Registrar Categoría Exitosa
 			Given cargo la página login del aplicativo Visor Web
 			  And inicio sesión con el usuario "admin" y la clave "clave"
@@ -7,6 +10,7 @@ Feature: Registrar Categoría
 			  And escribo la categoría "ZAPATILLAS CUCUMBER" y hago clic en el botón Guardar
 			 Then el aplicativo muestra el mensaje "Se guardó de manera correcta la Categoría"
 		
+		@TF
 		Scenario: Registrar Categoría Vacía
 			Given cargo la página login del aplicativo Visor Web
 			  And inicio sesión con el usuario "admin" y la clave "clave"
